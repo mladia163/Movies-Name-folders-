@@ -15,13 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from movie.views import index
-from movie.views import diff_path
-from movie.views import same_path
+from movie.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', index),
     url(r'^diff_path/', diff_path),
-    url(r'^same_path/', same_path),
 ]

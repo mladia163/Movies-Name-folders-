@@ -1,16 +1,30 @@
 import os
-
+import re
+import requests
 
 p1 = os.path.dirname(os.path.abspath(__file__))
-print p1
-
-p1 = p1 + "/../../../../"
+p1 = p1 + "/search"
 dirs = os.listdir(p1)
-for x in dirs:
-	print x
 
+	
+
+for root, subFolders, files in os.walk(p1):
+	print "root"
+	print root
+	print "subfolders"
+	print subFolders
+	print "files"
+	print files
+ 
 
 """
+
+def getWords(text):
+	return re.compile('\w+').findall(text)
+
+print getWords("asas/asas hgfd")
+
+
 
 path = "/home"
 dirs = os.listdir("/home")

@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="container">
+	
+	<div class="page-header header">
+    	<center><h1>Listing your directory Movies ;)</h1></center>      
+		<p> </p>
+  	</div>
+	
+	
+	<div class="panel panel-default">
+  		<div class="panel-heading">
+  			<center><h3>Move from current Path</h3></center>
+  			<p>
+  				<label>Example :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you are in /root/mayank/grofers and want to move back to root/mayank/employee/grofers<br>
+  				<label>Type :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/../employee/grofers
+  			</p>
+  		</div>
+  		
+  		<div class="panel-body">
+	  		<form action="/diff_path/" class="form-horizontal" method="GET">
+				<input type="hidden" name="take_path" value="change_path">
+				<label>Enter Directory:</label>
+				<input type="text" class="form-control col-sm-4" name="address" placeholder="Enter address">
+				<br><br><br><br>
+				<button type="submit" class="btn btn-success col-sm-3">Enter</button>
+			</form>	
+		</div>
+  	</div>
+  		
+  
+  	<br><br>
+ 
+ 
+ 	<div class="panel panel-default">
+  		<div class="panel-heading">
+  			<center><h3>List current Directory</h3></center>
+  			<p>
+  				<label>Instructions to use :</label>
+  				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  				Make a folder named "search" (without double quotes) and put your files there <br>
+  				<label>Example :</label>									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 					If you are in /root/mayank/grofers it will print all the files and folders in the /root/mayank/grofers/search<br>
+  			</p>
+  		</div>
+  		<div class="panel-body">	
+  			<form action="/diff_path/" class="form-horizontal">
+  				<input type="hidden" name="take_path" value="same_path">
+  				<button type="submit"  class="btn btn-success btn-block">Enter</button>
+  			</form>		
+  		</div>  		
+	</div>	
+	
+	
+</div>
+
+</body>
+
+<!-- bootstrap links which can also be downloaded and used -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
